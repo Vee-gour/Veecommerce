@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ef"/>
+      <stop offset="100%" stop-color="#ffe2c5"/>
+    </linearGradient>
+    <linearGradient id="watch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ff6b00"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <ellipse cx="455" cy="572" rx="170" ry="38" fill="#d69964" opacity="0.25"/>
+  <rect x="372" y="88" width="156" height="530" rx="78" fill="#ffbf75" opacity="0.42"/>
+  <rect x="309" y="175" width="282" height="310" rx="68" fill="url(#watch)"/>
+  <rect x="340" y="205" width="220" height="250" rx="48" fill="#1a1f2d"/>
+  <circle cx="450" cy="330" r="88" fill="#27304a"/>
+  <path d="M450 330l30-54" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M450 330l58 22" stroke="#ff9e44" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="450" cy="330" r="10" fill="#ffffff"/>
+  <rect x="420" y="100" width="60" height="30" rx="14" fill="#e28514"/>
+  <rect x="420" y="570" width="60" height="30" rx="14" fill="#e28514"/>
+  <text x="62" y="620" fill="#8e4200" font-size="42" font-family="Arial, sans-serif" font-weight="700">Smart Watch</text>
+  <text x="62" y="662" fill="#b86620" font-size="24" font-family="Arial, sans-serif">Lifestyle-style mock product render</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f1ff"/>
+      <stop offset="100%" stop-color="#d9d4ff"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5258ff"/>
+      <stop offset="100%" stop-color="#2d2fa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <ellipse cx="450" cy="575" rx="260" ry="44" fill="#7b76be" opacity="0.22"/>
+  <g transform="translate(170 210)">
+    <rect width="560" height="250" rx="34" fill="url(#board)"/>
+    <g fill="#fbfbff">
+      <rect x="34" y="34" width="68" height="52" rx="10"/>
+      <rect x="112" y="34" width="68" height="52" rx="10"/>
+      <rect x="190" y="34" width="68" height="52" rx="10"/>
+      <rect x="268" y="34" width="68" height="52" rx="10"/>
+      <rect x="346" y="34" width="68" height="52" rx="10"/>
+      <rect x="424" y="34" width="102" height="52" rx="10"/>
+      <rect x="52" y="98" width="94" height="52" rx="10"/>
+      <rect x="156" y="98" width="94" height="52" rx="10"/>
+      <rect x="260" y="98" width="94" height="52" rx="10"/>
+      <rect x="364" y="98" width="94" height="52" rx="10"/>
+      <rect x="468" y="98" width="58" height="52" rx="10"/>
+      <rect x="96" y="164" width="370" height="52" rx="12"/>
+    </g>
+  </g>
+  <text x="62" y="620" fill="#3531a7" font-size="42" font-family="Arial, sans-serif" font-weight="700">Mechanical Keyboard</text>
+  <text x="62" y="662" fill="#5952b4" font-size="24" font-family="Arial, sans-serif">Desk setup mock product render</text>
+</svg>

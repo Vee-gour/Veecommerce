@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#effff7"/>
+      <stop offset="100%" stop-color="#c8f2df"/>
+    </linearGradient>
+    <linearGradient id="mouse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2b32"/>
+      <stop offset="100%" stop-color="#0b1115"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <ellipse cx="450" cy="565" rx="185" ry="38" fill="#4d8d73" opacity="0.2"/>
+  <path d="M450 145c112 0 182 102 182 218 0 109-73 176-182 176s-182-67-182-176c0-116 70-218 182-218z" fill="url(#mouse)"/>
+  <path d="M450 145c62 0 103 65 103 128 0 30-12 54-31 71-19 16-45 25-72 25s-53-9-72-25c-19-17-31-41-31-71 0-63 41-128 103-128z" fill="#152128"/>
+  <rect x="432" y="182" width="36" height="92" rx="18" fill="#16a34a"/>
+  <path d="M450 145v198" stroke="#243339" stroke-width="8"/>
+  <circle cx="450" cy="401" r="10" fill="#21d07a"/>
+  <text x="62" y="620" fill="#0d5b37" font-size="42" font-family="Arial, sans-serif" font-weight="700">Gaming Mouse</text>
+  <text x="62" y="662" fill="#37865f" font-size="24" font-family="Arial, sans-serif">Neon hardware mock product render</text>
+</svg>

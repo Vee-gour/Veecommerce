@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | ShopSmart</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="/">ShopSmart</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/shop">Shop</a>
+          <a href="/admin" class="active">Admin</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="search-mini">
+            <input id="global-search" type="text" placeholder="Search products..." />
+          </div>
+          <a class="cart-link" href="/cart">
+            Cart <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <h1>Admin Dashboard</h1>
+          <p>Portfolio-friendly overview of products, revenue, and recent orders.</p>
+        </div>
+        <div id="dashboard-stats" class="dashboard-stats"></div>
+        <div class="admin-layout">
+          <section class="admin-panel">
+            <div class="panel-heading">
+              <h2>Recent Orders</h2>
+              <p>Orders are persisted to the JSON mock database.</p>
+            </div>
+            <div id="orders-history" class="orders-history"></div>
+          </section>
+          <aside class="admin-panel">
+            <div class="panel-heading">
+              <h2>Store Snapshot</h2>
+            </div>
+            <div class="snapshot-list">
+              <div>
+                <strong>Workflow</strong>
+                <p>Browse, filter, add to cart, simulate payment, confirm order.</p>
+              </div>
+              <div>
+                <strong>Checkout Mode</strong>
+                <p>Stripe-style test card plus Cash on Delivery fallback.</p>
+              </div>
+              <div>
+                <strong>Persistence</strong>
+                <p>Products and orders are served from JSON via Express APIs.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ShopSmart</h3>
+          <p>Modern portfolio e-commerce experience built with Node + Express.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: hello@shopsmart.dev</p>
+          <p>Phone: +1 (555) 015-2026</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <a href="/shop">Shop</a>
+          <a href="/admin">Admin</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

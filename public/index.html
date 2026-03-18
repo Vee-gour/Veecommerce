@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopSmart | Portfolio E-commerce Store</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="/">ShopSmart</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/shop">Shop</a>
+          <a href="/admin">Admin</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="search-mini">
+            <input id="global-search" type="text" placeholder="Search products..." />
+          </div>
+          <a class="cart-link" href="/cart">
+            Cart <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio E-commerce Store</p>
+            <h1>Shop smart tech essentials built for modern life.</h1>
+            <p>
+              Discover curated gadgets and accessories with real product browsing,
+              cart management, and checkout simulation.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="/shop">Browse Products</a>
+              <a class="btn ghost" href="/contact">Contact</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="promo-banner">
+              <span>Spring Tech Sale</span>
+              <strong>Save 15% on Accessories</strong>
+            </div>
+            <div class="hero-preview">
+              <div class="preview-stat">
+                <span>Fast Shipping</span>
+                <strong>2-3 Days</strong>
+              </div>
+              <div class="preview-stat">
+                <span>Ratings</span>
+                <strong>4.5+ Avg</strong>
+              </div>
+              <div class="preview-stat">
+                <span>Secure</span>
+                <strong>Checkout</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Featured Products</h2>
+            <p>Hand-picked items to highlight your best products.</p>
+          </div>
+          <div id="featured-products" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="container reviews-grid">
+          <div class="section-heading">
+            <h2>Customer Reviews</h2>
+            <p>Social proof to build trust and credibility.</p>
+          </div>
+          <div class="review-card">
+            <p>
+              “The experience feels polished and easy. The checkout flow is smooth,
+              and the product pages are super clear.”
+            </p>
+            <span>- Jordan M.</span>
+          </div>
+          <div class="review-card">
+            <p>
+              “Clean UI, great product grid, and the cart updates instantly.
+              This is exactly what I expect from a modern store.”
+            </p>
+            <span>- Priya S.</span>
+          </div>
+          <div class="review-card">
+            <p>
+              “Responsive on mobile and desktop. The filters are intuitive and fast.”
+            </p>
+            <span>- Alex T.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ShopSmart</h3>
+          <p>Modern portfolio e-commerce experience built with Node + Express.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: hello@shopsmart.dev</p>
+          <p>Phone: +1 (555) 015-2026</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <a href="/shop">Shop</a>
+          <a href="/cart">Cart</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

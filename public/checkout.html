@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | ShopSmart</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="checkout">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="/">ShopSmart</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/shop">Shop</a>
+          <a href="/admin">Admin</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="search-mini">
+            <input id="global-search" type="text" placeholder="Search products..." />
+          </div>
+          <a class="cart-link" href="/cart">
+            Cart <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container checkout-layout">
+        <div>
+          <div class="page-header">
+            <h1>Checkout</h1>
+            <p>Complete your order with simulated payment.</p>
+          </div>
+          <form id="checkout-form" class="checkout-form">
+            <label>
+              Full Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Shipping Address
+              <input type="text" name="address" required />
+            </label>
+            <label>
+              Payment Method
+              <select name="paymentMethod" id="payment-method" required>
+                <option value="stripe-test">Stripe Test Card</option>
+                <option value="cod">Cash on Delivery (Simulated)</option>
+              </select>
+            </label>
+            <div id="card-fields" class="card-fields">
+              <label>
+                Card Number
+                <input
+                  type="text"
+                  name="cardNumber"
+                  value="4242 4242 4242 4242"
+                  inputmode="numeric"
+                />
+              </label>
+              <div class="card-grid">
+                <label>
+                  Expiry
+                  <input type="text" name="cardExpiry" value="12/34" />
+                </label>
+                <label>
+                  CVC
+                  <input type="text" name="cardCvc" value="123" />
+                </label>
+              </div>
+              <p class="field-note">Use the prefilled Stripe-style test card to simulate a successful payment.</p>
+            </div>
+            <button class="btn primary full" type="submit">Place Order</button>
+          </form>
+        </div>
+        <aside>
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="checkout-summary"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ShopSmart</h3>
+          <p>Modern portfolio e-commerce experience built with Node + Express.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: hello@shopsmart.dev</p>
+          <p>Phone: +1 (555) 015-2026</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <a href="/shop">Shop</a>
+          <a href="/cart">Cart</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

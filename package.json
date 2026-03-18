@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-ecommerce-store",
+  "version": "1.0.0",
+  "description": "Portfolio E-commerce Store - Express + static frontend",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

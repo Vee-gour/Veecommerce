@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | ShopSmart</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="shop">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="/">ShopSmart</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/shop" class="active">Shop</a>
+          <a href="/admin">Admin</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="search-mini">
+            <input id="global-search" type="text" placeholder="Search products..." />
+          </div>
+          <a class="cart-link" href="/cart">
+            Cart <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="page-header">
+          <h1>Shop Products</h1>
+          <p>Filter by category, price, or rating to find the right fit.</p>
+        </div>
+        <div class="shop-layout">
+          <aside class="filters">
+            <h3>Filters</h3>
+            <label>
+              Category
+              <select id="filter-category">
+                <option value="all">All</option>
+                <option value="Audio">Audio</option>
+                <option value="Wearables">Wearables</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Office">Office</option>
+              </select>
+            </label>
+            <label>
+              Price Range
+              <select id="filter-price">
+                <option value="all">All</option>
+                <option value="0-25">$0 - $25</option>
+                <option value="25-60">$25 - $60</option>
+                <option value="60-100">$60 - $100</option>
+                <option value="100-200">$100 - $200</option>
+              </select>
+            </label>
+            <label>
+              Minimum Rating
+              <select id="filter-rating">
+                <option value="all">All</option>
+                <option value="4">4+ Stars</option>
+                <option value="4.5">4.5+ Stars</option>
+              </select>
+            </label>
+            <button id="clear-filters" class="btn ghost full">Clear Filters</button>
+          </aside>
+
+          <section>
+            <div class="shop-toolbar">
+              <div>
+                <strong id="results-count">0 products</strong>
+                <p id="results-meta" class="toolbar-meta">Browse the collection.</p>
+              </div>
+              <label class="sort-control">
+                Sort By
+                <select id="sort-products">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating-desc">Top Rated</option>
+                  <option value="name-asc">Name: A to Z</option>
+                </select>
+              </label>
+            </div>
+            <div id="shop-products" class="product-grid"></div>
+            <div id="pagination" class="pagination"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ShopSmart</h3>
+          <p>Modern portfolio e-commerce experience built with Node + Express.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: hello@shopsmart.dev</p>
+          <p>Phone: +1 (555) 015-2026</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <a href="/shop">Shop</a>
+          <a href="/cart">Cart</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
