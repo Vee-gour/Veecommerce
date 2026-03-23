@@ -28,47 +28,112 @@
     </header>
 
     <main class="section">
-      <div class="container contact-layout">
-        <div>
-          <h1>Contact ShopSmart</h1>
-          <p>
-            Have a question about the portfolio project or want to discuss a real
-            build? Reach out anytime.
-          </p>
-          <div class="contact-info">
-            <div>
-              <strong>Email</strong>
-              <span>hello@shopsmart.dev</span>
+      <section class="contact-hero">
+        <div class="container contact-hero-grid">
+          <div class="contact-intro">
+            <p class="eyebrow">Let's Build Something Better</p>
+            <h1>Contact ShopSmart</h1>
+            <p class="lead">
+              Have a question about the portfolio store or want a similar
+              e-commerce build for your brand? Reach out and let's talk through
+              the idea.
+            </p>
+
+            <div class="contact-info-grid">
+              <article class="contact-info-card">
+                <span class="contact-label">Email</span>
+                <strong>hello@shopsmart.dev</strong>
+                <p>Best for project inquiries, estimates, and product questions.</p>
+              </article>
+              <article class="contact-info-card">
+                <span class="contact-label">Phone</span>
+                <strong>+1 (555) 015-2026</strong>
+                <p>Available Monday to Friday for quick discovery calls.</p>
+              </article>
+              <article class="contact-info-card">
+                <span class="contact-label">Location</span>
+                <strong>Remote | North America</strong>
+                <p>Working with clients across commerce, SaaS, and digital brands.</p>
+              </article>
             </div>
-            <div>
-              <strong>Phone</strong>
-              <span>+1 (555) 015-2026</span>
-            </div>
-            <div>
-              <strong>Location</strong>
-              <span>Remote · North America</span>
+
+            <div class="contact-trust-bar">
+              <div>
+                <strong>24h</strong>
+                <span>Typical response time</span>
+              </div>
+              <div>
+                <strong>Design + Code</strong>
+                <span>Full-stack delivery</span>
+              </div>
+              <div>
+                <strong>Portfolio Ready</strong>
+                <span>Clean professional finish</span>
+              </div>
             </div>
           </div>
+
+          <div class="contact-card contact-form-shell">
+            <div class="contact-form-head">
+              <p class="eyebrow">Project Inquiry</p>
+              <h3>Send a message</h3>
+              <p>
+                Share a few details and I'll get back with next steps, scope
+                ideas, or a recommended build approach.
+              </p>
+            </div>
+
+            <form class="contact-form">
+              <div class="contact-form-grid">
+                <label>
+                  Full Name
+                  <input type="text" placeholder="Jane Doe" />
+                </label>
+                <label>
+                  Email Address
+                  <input type="email" placeholder="jane@company.com" />
+                </label>
+              </div>
+
+              <div class="contact-form-grid">
+                <label>
+                  Company or Brand
+                  <input type="text" placeholder="Studio, startup, or store name" />
+                </label>
+                <label>
+                  Budget Range
+                  <select>
+                    <option>Choose a range</option>
+                    <option>$500 - $1,500</option>
+                    <option>$1,500 - $3,000</option>
+                    <option>$3,000+</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Project Type
+                <select>
+                  <option>E-commerce Website</option>
+                  <option>Landing Page</option>
+                  <option>UI Refresh</option>
+                  <option>Full Product Build</option>
+                </select>
+              </label>
+
+              <label>
+                Project Details
+                <textarea rows="6" placeholder="Tell me about your goals, timeline, and the kind of experience you want to create."></textarea>
+              </label>
+
+              <div class="contact-form-actions">
+                <button class="btn primary" type="button">Send Inquiry</button>
+                <p>No spam, no pressure. Just a thoughtful reply.</p>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="contact-card">
-          <h3>Send a message</h3>
-          <form>
-            <label>
-              Name
-              <input type="text" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" placeholder="Your email" />
-            </label>
-            <label>
-              Message
-              <textarea rows="4" placeholder="Tell me about your project"></textarea>
-            </label>
-            <button class="btn primary full" type="button">Send Message</button>
-          </form>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="site-footer">

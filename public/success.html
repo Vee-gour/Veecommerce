@@ -28,15 +28,35 @@
     </header>
 
     <main class="section">
-      <div class="container success-card">
-        <div class="success-icon">✓</div>
-        <h1>Order Confirmed</h1>
-        <p id="order-message">Thanks for your purchase. Your order is confirmed.</p>
-        <div id="order-details" class="success-details"></div>
-        <div class="success-actions">
-          <a class="btn primary" href="/shop">Continue Shopping</a>
-          <a class="btn ghost" href="/">Back to Home</a>
-        </div>
+      <div class="container">
+        <section class="success-shell">
+          <div class="success-card">
+            <div class="success-icon">&#10003;</div>
+            <p class="eyebrow">Order Received</p>
+            <h1>Order Confirmed</h1>
+            <p id="order-message">Thanks for your purchase. Your order is confirmed.</p>
+            <div id="order-details" class="success-details"></div>
+            <div class="success-actions">
+              <a class="btn primary" href="/shop">Continue Shopping</a>
+              <a class="btn ghost" href="/">Back to Home</a>
+            </div>
+          </div>
+          <aside class="success-side-card">
+            <h3>What happens next</h3>
+            <div class="success-step">
+              <strong>1. Confirmation sent</strong>
+              <p>Your portfolio storefront stores the order and confirms it immediately.</p>
+            </div>
+            <div class="success-step">
+              <strong>2. Dashboard updated</strong>
+              <p>The admin screen reflects the latest order, totals, and revenue metrics.</p>
+            </div>
+            <div class="success-step">
+              <strong>3. Shopper can continue</strong>
+              <p>This completes a realistic end-to-end e-commerce workflow for your portfolio.</p>
+            </div>
+          </aside>
+        </section>
       </div>
     </main>
 

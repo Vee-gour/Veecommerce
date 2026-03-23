@@ -28,12 +28,30 @@
     </header>
 
     <main class="section">
+      <div class="container">
+        <section class="page-hero page-hero-checkout">
+          <div>
+            <p class="eyebrow">Secure Purchase Flow</p>
+            <h1>Checkout</h1>
+            <p class="lead">
+              Complete your order with a polished Stripe-style test payment
+              experience or simulated cash on delivery.
+            </p>
+          </div>
+          <div class="page-hero-panel">
+            <div class="page-hero-chip">
+              <span>Test mode</span>
+              <strong>4242 card ready</strong>
+            </div>
+            <div class="page-hero-chip">
+              <span>Trust signals</span>
+              <strong>Clear summary and delivery view</strong>
+            </div>
+          </div>
+        </section>
+      </div>
       <div class="container checkout-layout">
         <div>
-          <div class="page-header">
-            <h1>Checkout</h1>
-            <p>Complete your order with simulated payment.</p>
-          </div>
           <form id="checkout-form" class="checkout-form">
             <label>
               Full Name
@@ -55,6 +73,10 @@
               </select>
             </label>
             <div id="card-fields" class="card-fields">
+              <div class="payment-card-head">
+                <strong>Stripe Test Card</strong>
+                <span>Safe simulated payment for portfolio demos</span>
+              </div>
               <label>
                 Card Number
                 <input
@@ -82,6 +104,7 @@
         <aside>
           <div class="order-summary">
             <h3>Order Summary</h3>
+            <p class="summary-note">Shipping is calculated as a flat demo rate for this portfolio project.</p>
             <div id="checkout-summary"></div>
           </div>
         </aside>

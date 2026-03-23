@@ -57,6 +57,19 @@ function ratingLabel(value) {
   return `${value.toFixed(1)} / 5`;
 }
 
+function getProductBadge(product) {
+  if (product.featured) {
+    return "Featured";
+  }
+  if (product.rating >= 4.5) {
+    return "Top Rated";
+  }
+  if (product.price <= 50) {
+    return "Best Value";
+  }
+  return "Popular Pick";
+}
+
 function getQueryParams() {
   return new URLSearchParams(window.location.search);
 }
@@ -135,6 +148,7 @@ function renderProductCard(product) {
   return `
     <article class="product-card">
       <a class="product-image-link" href="/product?id=${product.id}">
+        <span class="product-badge">${getProductBadge(product)}</span>
         <img src="${product.image}" alt="${product.name}" />
       </a>
       <div class="product-meta">
@@ -363,14 +377,39 @@ function renderProductDetail() {
 
   container.innerHTML = `
     <div class="product-visual">
-      <img src="${product.image}" alt="${product.name}" />
+      <div class="product-gallery-frame">
+        <span class="product-badge product-badge-detail">${getProductBadge(product)}</span>
+        <img src="${product.image}" alt="${product.name}" />
+      </div>
+      <div class="product-highlight-strip">
+        <div>
+          <strong>Free returns</strong>
+          <span>30-day coverage</span>
+        </div>
+        <div>
+          <strong>Fast dispatch</strong>
+          <span>Ships in 24 hours</span>
+        </div>
+      </div>
     </div>
-    <div>
-      <p class="eyebrow">${product.category}</p>
-      <h1>${product.name}</h1>
-      <div class="rating">${ratingLabel(product.rating)}</div>
-      <div class="price">${formatPrice(product.price)}</div>
-      <p>${product.description}</p>
+    <div class="product-detail-copy">
+      <div class="product-heading-row">
+        <div>
+          <p class="eyebrow">${product.category}</p>
+          <h1>${product.name}</h1>
+        </div>
+        <div class="product-rating-pill">${ratingLabel(product.rating)}</div>
+      </div>
+      <div class="product-price-row">
+        <div class="price">${formatPrice(product.price)}</div>
+        <span class="product-stock">In Stock</span>
+      </div>
+      <p class="product-detail-description">${product.description}</p>
+      <div class="product-feature-list">
+        <div>Built for modern desk setups and daily carry.</div>
+        <div>Clean product presentation for portfolio demos.</div>
+        <div>Integrated cart and checkout simulation.</div>
+      </div>
       <div class="actions">
         <button class="btn primary" data-add="${product.id}">Add to Cart</button>
         <a class="btn ghost" href="/shop">Back to Shop</a>
@@ -387,8 +426,14 @@ function renderProductDetail() {
       </div>
       <div class="section product-reviews">
         <h3>Customer Reviews</h3>
-        <p>"Exactly what I needed. Clean design and great performance."</p>
-        <p>"The build quality feels premium. I would buy again."</p>
+        <div class="product-review-card">
+          <p>"Exactly what I needed. Clean design and great performance."</p>
+          <span>- Morgan K.</span>
+        </div>
+        <div class="product-review-card">
+          <p>"The build quality feels premium. I would buy again."</p>
+          <span>- Riley P.</span>
+        </div>
       </div>
     </div>
   `;
@@ -467,7 +512,7 @@ function renderCheckoutSummary() {
     return;
   }
 
-  const { items, subtotal, shipping, total } = getCartTotals();
+  const { items, shipping, total } = getCartTotals();
   if (!items.length) {
     container.innerHTML = `<p>Your cart is empty.</p>`;
     return;
@@ -632,10 +677,10 @@ function renderDashboard() {
   }
 
   statsContainer.innerHTML = `
-    <div class="stat-card"><span>Total Orders</span><strong>${state.dashboard.totalOrders}</strong></div>
-    <div class="stat-card"><span>Total Revenue</span><strong>${formatPrice(state.dashboard.totalRevenue)}</strong></div>
-    <div class="stat-card"><span>Items Sold</span><strong>${state.dashboard.totalItems}</strong></div>
-    <div class="stat-card"><span>Products</span><strong>${state.dashboard.productsCount}</strong></div>
+    <div class="stat-card"><span>Total Orders</span><strong>${state.dashboard.totalOrders}</strong><p>Confirmed customer checkouts</p></div>
+    <div class="stat-card"><span>Total Revenue</span><strong>${formatPrice(state.dashboard.totalRevenue)}</strong><p>Gross order value captured</p></div>
+    <div class="stat-card"><span>Items Sold</span><strong>${state.dashboard.totalItems}</strong><p>Units moved through the cart</p></div>
+    <div class="stat-card"><span>Products</span><strong>${state.dashboard.productsCount}</strong><p>Live demo inventory count</p></div>
   `;
 
   if (!state.orders.length) {
@@ -650,7 +695,7 @@ function renderDashboard() {
           <div class="order-card-top">
             <div>
               <strong>${order.orderId}</strong>
-              <p>${order.customer.name} · ${order.customer.email}</p>
+              <p>${order.customer.name} | ${order.customer.email}</p>
             </div>
             <div class="order-status">${order.status}</div>
           </div>
