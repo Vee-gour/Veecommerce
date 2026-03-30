@@ -6,7 +6,7 @@
     "description": "Comfort-fit wireless headphones with crisp audio, deep bass, and 24-hour battery life.",
     "category": "Audio",
     "rating": 4.5,
-    "image": "/images/wireless-headphones.svg",
+    "image": "/images/wireless-headphones.jpg",
     "featured": true
   },
   {
@@ -16,7 +16,7 @@
     "description": "Sleek smartwatch with health tracking, notifications, and a vibrant AMOLED display.",
     "category": "Wearables",
     "rating": 4.6,
-    "image": "/images/smart-watch.svg",
+    "image": "/images/smart-watch.jpg",
     "featured": true
   },
   {
@@ -26,7 +26,7 @@
     "description": "High-precision gaming mouse with customizable DPI, RGB lighting, and ergonomic grip.",
     "category": "Gaming",
     "rating": 4.4,
-    "image": "/images/gaming-mouse.svg",
+    "image": "/images/gaming-mouse.jpg",
     "featured": false
   },
   {
@@ -36,7 +36,7 @@
     "description": "Tactile mechanical keyboard with hot-swappable switches and durable keycaps.",
     "category": "Gaming",
     "rating": 4.7,
-    "image": "/images/mechanical-keyboard.svg",
+    "image": "/images/mechanical-keyboard.jpg",
     "featured": true
   },
   {
@@ -46,7 +46,7 @@
     "description": "Water-resistant backpack with padded laptop sleeve and smart organization pockets.",
     "category": "Accessories",
     "rating": 4.3,
-    "image": "/images/laptop-backpack.svg",
+    "image": "/images/laptop-backpack.jpg",
     "featured": false
   },
   {
@@ -56,7 +56,7 @@
     "description": "Adjustable phone stand for desk setups, video calls, and hands-free viewing.",
     "category": "Office",
     "rating": 4.1,
-    "image": "/images/smartphone-stand.svg",
+    "image": "/images/smartphone-stand.jpg",
     "featured": false
   }
 ]
