@@ -49,10 +49,25 @@
             </div>
           </div>
         </section>
+        <section class="admin-overview">
+          <div class="admin-mini-card">
+            <span>Sync Status</span>
+            <strong>Live JSON Data</strong>
+          </div>
+          <div class="admin-mini-card">
+            <span>Store Type</span>
+            <strong>Portfolio Demo Build</strong>
+          </div>
+          <div class="admin-mini-card">
+            <span>Checkout Mode</span>
+            <strong>Simulated Payments</strong>
+          </div>
+        </section>
         <div id="dashboard-stats" class="dashboard-stats"></div>
         <div class="admin-layout">
           <section class="admin-panel">
             <div class="panel-heading">
+              <p class="eyebrow">Orders</p>
               <h2>Recent Orders</h2>
               <p>Orders are persisted to the JSON mock database.</p>
             </div>
@@ -60,18 +75,19 @@
           </section>
           <aside class="admin-panel">
             <div class="panel-heading">
+              <p class="eyebrow">Highlights</p>
               <h2>Store Snapshot</h2>
             </div>
             <div class="snapshot-list">
-              <div>
+              <div class="snapshot-card">
                 <strong>Workflow</strong>
                 <p>Browse, filter, add to cart, simulate payment, confirm order.</p>
               </div>
-              <div>
+              <div class="snapshot-card">
                 <strong>Checkout Mode</strong>
                 <p>Stripe-style test card plus Cash on Delivery fallback.</p>
               </div>
-              <div>
+              <div class="snapshot-card">
                 <strong>Persistence</strong>
                 <p>Products and orders are served from JSON via Express APIs.</p>
               </div>

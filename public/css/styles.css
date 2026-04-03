@@ -1062,6 +1062,33 @@ img {
   margin-bottom: 32px;
 }
 
+.admin-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-mini-card {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 14px rgba(31, 41, 51, 0.04);
+}
+
+.admin-mini-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.84rem;
+  margin-bottom: 6px;
+}
+
+.admin-mini-card strong {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
 .stat-card,
 .admin-panel {
   background: var(--surface);
@@ -1114,7 +1141,16 @@ img {
 }
 
 .panel-heading {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.panel-heading h2 {
+  margin: 4px 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.panel-heading p:last-child {
+  color: var(--muted);
 }
 
 .orders-history,
@@ -1131,6 +1167,12 @@ img {
   display: grid;
   gap: 10px;
   box-shadow: 0 4px 14px rgba(31, 41, 51, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(31, 41, 51, 0.08);
 }
 
 .order-card-top {
@@ -1152,6 +1194,20 @@ img {
 
 .snapshot-list p {
   color: var(--muted);
+}
+
+.snapshot-card {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 14px rgba(31, 41, 51, 0.04);
+}
+
+.snapshot-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary);
 }
 
 .empty-state {
